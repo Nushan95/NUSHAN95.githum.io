@@ -1,0 +1,206 @@
+<html>
+    <head><title>application form</title>
+    <style>
+        body {
+            background-image: url("https://www.meetingsnet.com/sites/meetingsnet.com/files/GalvestonHotel1a.png");
+             
+             border-style: solid;
+             border-color: white;
+             border-top-color: green;
+        }
+
+       header {
+  border: 10px dotted white;
+  padding: 15px;
+  padding-top: 0px;
+  background: lightblue;
+  background-clip: content-box;
+  margin-top:10px;
+
+}
+.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+.fn {
+     border-radius: 10px;
+     margin-left: 10px
+    
+      
+}
+input[type=email] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 90px;
+  box-sizing: border-box;
+  border-color: #3F000F;
+  border-width: 3px
+}
+input[type=password] {
+  width: 50%;
+  padding: 12px 30px;
+  margin: 8px 90px;
+  box-sizing: border-box;
+  border-color: #3F000F;
+  border-width: 3px
+
+}
+input[type=text] {
+  width: 50%;
+  padding: 12px 30px;
+  margin: 8px 90px;
+  box-sizing: border-box;
+  border-color: #3F000F;
+  border-width: 3px
+
+}
+input[type=tel] {
+  width: 50%;
+  padding: 12px 30px;
+  margin: 8px 90px;
+  box-sizing: border-box;
+  border-color: #3F000F;
+  border-width: 3px
+
+}
+
+input:hover {
+  opacity: 0.5;
+  color: blue;
+  border-color: green;
+}
+input[type=date] {
+  width: 50%;
+  padding: 12px 30px;
+  margin: 8px 90px;
+  box-sizing: border-box;
+  border-color: #3F000F;
+  border-width: 3px
+  
+
+
+}
+
+.cp {
+  margin-left: 90px
+}
+#comment {
+  height:200px;
+    
+}
+input[type=submit] {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-inline: 100px;
+}
+input[type=reset] {
+  background-color: #C34A2C; /* red */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 4px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-inline: 100px;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.pw {
+  margin-left: 90px
+}
+
+    
+    </style>
+    </head>
+    <body>
+        <header height="100px" width="100%" border="solid">
+            <h1 style="color:white; text-align:center; font-family:Gabriola; font-size:60px;" >Horizon Inn & Ocean View Lodge</h1>
+        </header>
+        <h1 style="color:white; text-align:center;" ><u>Hotel Sales Lead Form</u></h1>
+    <form style="color:black; font-size:20px; font-family:'Comic Sans MS'; align:center" class="transbox"  >
+        <label for="fname"><b>First Name :</b></label><br>
+        <input type="text" id="fname" name="fname" height="20px" required class="fn" style="font-size:20px; font-color:#342D7E;"><br>
+        <label for="fname"><b>Secound Name :</b></label><br>
+        <input type="text" id="fname" name="fname" required class="fn" style="font-size:20px;"><br><br>
+        <!-- email -->
+        <label for="emil"><b>Email :</b></label><br>
+        <input type="email" id="emil" name="emil" required class="fn" style="font-size:20px;"><br><br>
+
+        <label for="password"><b>CREATE PASSWORD:</b></label><br>
+        <label for="npw" class="pw">New password</label><br>
+            <input type="password" id="password" name="password"><br>
+            
+            <label for="repw" class="pw">Re-enter password</label><br>
+            <input type="password" id="password" name="password"><br>
+            <br>
+
+        <!-- phone number -->
+        <label for="phone"> <b>Phone Number :</b></label><br>
+        <input type="tel" id="phone" name="phone" required class="fn" style="font-size:20px;"><br><br>
+
+        <!-- request -->
+        <label for="req"> <b>Request </b></label><br>
+        <input type="checkbox" id="req" name="req" class="cp">
+        <lable for="rr"> Room reservation</lable><br>
+        <input type="checkbox" id="req" name="req" class="cp">
+        <lable for="gr"> Group Reservation</lable><br>
+        <input type="checkbox" id="req" name="req" class="cp">
+        <lable for="cr">Conference reservation</lable><br>
+        <input type="checkbox" id="req" name="req" class="cp">
+        <lable for="hf">Hotel facilities</lable><br><br>
+      <!-- dates -->
+
+      <label for="sdate"> <b>Start date</b> </label><br>
+        <input type="date" id="date" name="date" required class="fn" style="font-size:25px;"><br><br>
+        <label for="edate"> <b>End date </b></label><br>
+        <input type="date" id="edate" name="edate" required class="fn" style="font-size:25px;"><br><br>
+
+        <label for="payment"><b>How whould you like to Make the payment</b></label><br>
+            <input type="radio" id="payment" name="payment" class="cp" >
+            <label for="payment" ">Cash Payment</label><br>
+             <input type="radio" id="payment" name="payment" class="cp" >
+             <label for="fm" >Card Payment</label><br>
+
+             <input type="radio" id="payment" name="payment" class="cp" >
+             <label for="fm" >Check Payment</label><br><br>
+
+        <!-- comments -->
+        <label for="comment"><b>Comments & <br> Requests</b></label><br>
+        <input type="text" id="comment" name="comment" required class="fn" class="ee" style="font-size:20px;"><br><br>
+    </form>
+<!-- dates -->
+<input type="reset" value="RESET" class="button" align="center">
+<input type="submit" value="SUBMIT" class="button" align="center">
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+      
+
